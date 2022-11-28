@@ -12494,3 +12494,76 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.0ms | Allocations: 6042)
 
 
+Started GET "/" for 127.0.0.1 at 2022-11-28 15:54:08 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 531)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 5.6ms | Allocations: 949)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 9824)
+Completed 200 OK in 47ms (Views: 33.0ms | ActiveRecord: 0.0ms | Allocations: 13929)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-11-28 15:54:26 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.8ms | Allocations: 273)
+  Rendered devise/shared/_links.html.erb (Duration: 3.0ms | Allocations: 618)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 19.3ms | Allocations: 3289)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 321)
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 6921)
+Completed 200 OK in 78ms (Views: 48.2ms | ActiveRecord: 1.1ms | Allocations: 12962)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-11-28 15:54:28 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 282)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 3307)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 321)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 6948)
+Completed 200 OK in 27ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 8663)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-11-28 15:54:39 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aditya@definelabs.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aditya@definelabs.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 434ms (ActiveRecord: 0.9ms | Allocations: 8962)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-28 15:54:39 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:7
+  Rendered home/_header.html.erb (Duration: 3.9ms | Allocations: 1505)
+  Rendered layouts/_alerts.html.erb (Duration: 1.2ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 5211)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.2ms | Allocations: 5683)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2022-11-28 15:54:42 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/about.html.erb:3
+  Rendered home/about.html.erb within layouts/application (Duration: 9.9ms | Allocations: 1227)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 312)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 4648)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.3ms | Allocations: 5160)
+
+
