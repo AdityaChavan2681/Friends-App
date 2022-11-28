@@ -38,5 +38,12 @@
     </form>
   </div>
 </nav>
+<% if user_signed_in? %>
+<a href="#">
+  <span class="glyphicon glyphicon-user"></span>
+</a>
+  <%= current_user.email %>
+  <% else %>
+  <% end %>
 <br/>
 <br/>
