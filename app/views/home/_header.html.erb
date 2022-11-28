@@ -39,10 +39,10 @@
   </div>
 </nav>
 <% if user_signed_in? %>
-<a href="#">
-  <span class="glyphicon glyphicon-user"></span>
-</a>
+<button type="button" class="btn btn-light">
+  <span class="glyphicon glyphicon-user" style="color:green"></span>
   <%= current_user.email %>
+</button>
   <% else %>
   <% end %>
 <br/>
