@@ -2,34 +2,34 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <%= link_to "Homepage", root_path, class:"nav-link", title: '', data: { toggle: 'tooltip', placement: 'top', original_title: 'Facebook' } %>
+        <%= link_to "Homepage", root_path, class:"nav-link", title: '', data: { toggle: 'tooltip', placement: 'left', original_title: 'This is the homepage' } %>
       </li>
       <% if user_signed_in? %>
 
       <li class="nav-item">
-        <%= link_to "Show friends", friends_path, class:"nav-link" %>
+        <%= link_to "Show friends", friends_path, class:"nav-link", title: '', data: { toggle: 'tooltip', placement: 'bottom', original_title: 'This is the friends page' } %>
       </li>
 
       <li class="nav-item">
-        <%= link_to "Sign out",  destroy_user_session_path , method: :delete, class:"nav-link" %>
+        <%= link_to "Sign out",  destroy_user_session_path , method: :delete, class:"nav-link", title: '', data: { toggle: 'tooltip', placement: 'bottom', original_title: 'Sign out or Log out' } %>
       </li>
       <li class="nav-item">
-        <%= link_to "Edit profile",  edit_user_registration_path , class:"nav-link" %>
+        <%= link_to "Edit profile",  edit_user_registration_path , class:"nav-link", title: '', data: { toggle: 'tooltip', placement: 'bottom', original_title: 'Edit profile page' } %>
       </li>
 
       <% else %>
 
       <li class="nav-item">
-        <%= link_to "Sign up",  new_user_registration_path , class:"nav-link" %>
+        <%= link_to "Sign up",  new_user_registration_path , class:"nav-link", title: '', data: { toggle: 'tooltip', placement: 'bottom', original_title: 'Sign up' } %>
       </li>
       <li class="nav-item">
-        <%= link_to "Sign in",  new_user_session_path , class:"nav-link" %>
+        <%= link_to "Sign in",  new_user_session_path , class:"nav-link" , title: '', data: { toggle: 'tooltip', placement: 'bottom', original_title: 'Sign in or Log in' }%>
       </li>
 
       <% end %>
       <% if user_signed_in? %>
       <li class="nav-item">
-        <%= link_to "About me",  home_about_path , class:"nav-link" %>
+        <%= link_to "About me",  home_about_path , class:"nav-link", title: '', data: { toggle: 'tooltip', placement: 'bottom', original_title: 'This is the About me page' } %>
       </li>
       <%end %>
     </ul>
@@ -40,11 +40,16 @@
   </div>
 </nav>
 <% if user_signed_in? %>
-<button type="button" class="btn btn-light">
-  <span class="glyphicon glyphicon-user" style="color:green"></span>
-  <%= current_user.email %>
-</button>
+<%= link_to home_about_path , class:"btn btn-light" do %>
+<span class="glyphicon glyphicon-user" style="color:green"></span> <%= current_user.email %>
+<%end%>
   <% else %>
   <% end %>
 <br/>
 <br/>
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
