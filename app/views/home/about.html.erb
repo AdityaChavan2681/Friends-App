@@ -1,3 +1,13 @@
-This is the about us page...
+This is an about you page
 <br/>
-<%= @about_me %>
+<%if user_signed_in? %>
+<div class="card" style="width: 18rem;">
+  <img src="/assets/Test2.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">
+      <%= current_user.email %>
+</h5>
+    <p class="card-text">This user was created on <%= current_user.created_at.strftime("%d/%m/%Y at %H:%M" )%></p>
+  </div>
+</div>
+<% end %>
