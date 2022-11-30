@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg p-3 mb-5 bg-white rounded">
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
@@ -40,7 +40,7 @@
   </div>
 </nav>
 <% if user_signed_in? %>
-<%= link_to home_about_path , class:"btn btn-light" do %>
+<%= link_to home_about_path , class:"btn btn-light shadow p-3 mb-5 bg-white rounded" , title: '', data: { toggle: 'tooltip', placement: 'right', original_title: 'My profile' } do %>
 <span class="glyphicon glyphicon-user" style="color:green"></span> <%= current_user.email %>
 <%end%>
   <% else %>
@@ -53,3 +53,6 @@
     $('[data-toggle="tooltip"]').tooltip()
   })
 </script>
+<style>
+
+</style>
