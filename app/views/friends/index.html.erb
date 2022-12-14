@@ -6,6 +6,7 @@
 <table class="table table-hover table-dark">
   <thead>
     <tr>
+      <th>Profile</th>
       <th>Name</th>
       <th>Email</th>
       <th>Phone</th>
@@ -20,6 +21,9 @@
     <% if friend.user == current_user %>
       <tr>
         <td>
+          <%= image_tag(friend.image, class: "img-circular")  %>
+        </td>
+        <td>
           <%= link_to friend.first_name + ' ' + friend.last_name, friend%>
         </td>
         <td><%= friend.email %></td>
@@ -33,4 +37,16 @@
   </tbody>
 </table>
 
+
+<style >
+  .img-circular {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  display: block;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+</style>
 <br>
