@@ -1,9 +1,24 @@
 
-<div class="jumbotron">
+<div class="jumbotron">  <%= image_tag(@friend.image,:style=>"width:20%", class: "img-circular")  %>
+
+
   <h1 class="display-4"><%= @friend.first_name %><%= @friend.last_name %></h1>
   <p class="lead"><%= @friend.email %> <%= @friend.phone %> <%= @friend.twitter %></p>
   <hr class="my-4">
   <p></p>
   <%= link_to 'Edit', edit_friend_path(@friend) , class:"btn btn-secondary"%>
   <%= link_to 'Back', friends_path , class:"btn btn-secondary btn-dark"%>
+
 </div>
+
+<style >
+  .img-circular{
+   width: 200px;
+   height: 200px;
+   background-size: cover;
+   display: block;
+   border-radius: 100px;
+   -webkit-border-radius: 100px;
+   -moz-border-radius: 100px;
+  }
+</style>
