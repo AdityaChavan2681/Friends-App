@@ -23002,3 +23002,606 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 22ms (Views: 21.0ms | Allocations: 3954)
 
 
+Started GET "/" for 127.0.0.1 at 2022-12-28 16:00:09 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 560)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 5.5ms | Allocations: 1146)
+  Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 10579)
+Completed 200 OK in 54ms (Views: 39.3ms | ActiveRecord: 0.0ms | Allocations: 14863)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-28 16:01:10 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 251)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 4.3ms | Allocations: 966)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 4986)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 6424)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-12-28 16:01:17 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 697)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 17.0ms | Allocations: 4568)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 417)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 8291)
+Completed 200 OK in 60ms (Views: 30.5ms | ActiveRecord: 2.7ms | Allocations: 14803)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-28 16:01:20 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 420)
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 3565)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 4020)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-12-28 16:01:23 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 165)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.5ms | Allocations: 379)
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 4600)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.0ms | Allocations: 5203)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-12-28 16:01:35 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"user1@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "user1@email.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 460ms (ActiveRecord: 0.6ms | Allocations: 5938)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-28 16:01:35 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:7
+  Rendered home/_header.html.erb (Duration: 4.0ms | Allocations: 1802)
+  Rendered layouts/_alerts.html.erb (Duration: 0.6ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 5546)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.2ms | Allocations: 6018)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-28 16:04:01 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:7
+  Rendered home/_header.html.erb (Duration: 4.2ms | Allocations: 1538)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 4681)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.1ms | Allocations: 5070)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2022-12-28 16:04:04 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/home/about.html.erb:3
+  Rendered home/about.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 599)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 4938)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.3ms | Allocations: 5458)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Test2.png"):
+  
+Started GET "/friends" for 127.0.0.1 at 2022-12-28 16:04:19 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  Rendered friends/index.html.erb within layouts/application (Duration: 61.1ms | Allocations: 16258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 634)
+  Rendered layout layouts/application.html.erb (Duration: 69.4ms | Allocations: 20175)
+Completed 200 OK in 94ms (Views: 69.5ms | ActiveRecord: 3.5ms | Allocations: 23471)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Test2.png"):
+  
+Started GET "/friends/new" for 127.0.0.1 at 2022-12-28 16:04:22 +0530
+Processing by FriendsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 14.4ms | Allocations: 2235)
+  Rendered friends/new.html.erb within layouts/application (Duration: 16.8ms | Allocations: 2657)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 596)
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 6472)
+Completed 200 OK in 76ms (Views: 32.3ms | ActiveRecord: 0.4ms | Allocations: 10884)
+
+
+Started POST "/friends" for 127.0.0.1 at 2022-12-28 16:19:47 +0530
+Processing by FriendsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "friend"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb572674b28 @tempfile=#<Tempfile:/tmp/RackMultipart20221228-9736-w5l1ng.jpeg>, @original_filename="maple.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"friend[image]\"; filename=\"maple.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "first_name"=>"Maple", "last_name"=>"Leaves", "email"=>"maple@email.com", "phone"=>"111 3333", "twitter"=>"@maple", "user_id"=>"5"}, "commit"=>"Create Friend"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+  [1m[36mFriend Create (1.5ms)[0m  [1m[32mINSERT INTO "friends" ("first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Maple"], ["last_name", "Leaves"], ["email", "maple@email.com"], ["phone", "111 3333"], ["twitter", "@maple"], ["created_at", "2022-12-28 10:49:47.820132"], ["updated_at", "2022-12-28 10:49:47.820132"], ["user_id", 5]]
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 18], ["record_type", "Friend"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 18], ["record_type", "Friend"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+  [1m[36mActiveStorage::Blob Create (0.7ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["key", "69d3cmdi85w30r8lvk5wmo5k5933"], ["filename", "maple.jpeg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 29463], ["checksum", "11qG7ve5FaOpBAAc3wezmg=="], ["created_at", "2022-12-28 10:49:47.876388"]]
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+  [1m[36mActiveStorage::Attachment Create (1.0ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "image"], ["record_type", "Friend"], ["record_id", 18], ["blob_id", 4], ["created_at", "2022-12-28 10:49:47.883153"]]
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+  [1m[36mFriend Update (0.1ms)[0m  [1m[33mUPDATE "friends" SET "updated_at" = ? WHERE "friends"."id" = ?[0m  [["updated_at", "2022-12-28 10:49:47.890935"], ["id", 18]]
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+[36m  Disk Storage (0.7ms) [0m[32mUploaded file to key: 69d3cmdi85w30r8lvk5wmo5k5933 (checksum: 11qG7ve5FaOpBAAc3wezmg==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: b2881f74-2c4e-4866-9c78-b68120c89d06) to Async(default) with arguments: #<GlobalID:0x00007fb5724ae7a8 @uri=#<URI::GID gid://friends/ActiveStorage::Blob/4>>
+Redirected to http://localhost:3000/friends/18
+Completed 302 Found in 198ms (ActiveRecord: 16.4ms | Allocations: 39787)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b2881f74-2c4e-4866-9c78-b68120c89d06] Performing ActiveStorage::AnalyzeJob (Job ID: b2881f74-2c4e-4866-9c78-b68120c89d06) from Async(default) enqueued at 2022-12-28T10:49:47Z with arguments: #<GlobalID:0x00007fb572470570 @uri=#<URI::GID gid://friends/ActiveStorage::Blob/4>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b2881f74-2c4e-4866-9c78-b68120c89d06] [36m  Disk Storage (0.6ms) [0m[34mDownloaded file from key: 69d3cmdi85w30r8lvk5wmo5k5933[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b2881f74-2c4e-4866-9c78-b68120c89d06] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b2881f74-2c4e-4866-9c78-b68120c89d06]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b2881f74-2c4e-4866-9c78-b68120c89d06]   [1m[36mActiveStorage::Blob Update (0.5ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 4]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b2881f74-2c4e-4866-9c78-b68120c89d06]   [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b2881f74-2c4e-4866-9c78-b68120c89d06] Performed ActiveStorage::AnalyzeJob (Job ID: b2881f74-2c4e-4866-9c78-b68120c89d06) from Async(default) in 68.02ms
+Started GET "/friends/18" for 127.0.0.1 at 2022-12-28 16:19:48 +0530
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:72:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 18], ["record_type", "Friend"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/friends/show.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/show.html.erb:2
+  Rendered friends/show.html.erb within layouts/application (Duration: 14.5ms | Allocations: 3002)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:7
+  Rendered home/_header.html.erb (Duration: 4.7ms | Allocations: 1592)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 36.7ms | Allocations: 7956)
+Completed 200 OK in 43ms (Views: 37.0ms | ActiveRecord: 1.0ms | Allocations: 9390)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5acd95f21b7584dfe6dca4e9f4c3f88a7c2ce0a7/maple.jpeg" for 127.0.0.1 at 2022-12-28 16:19:48 +0530
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5acd95f21b7584dfe6dca4e9f4c3f88a7c2ce0a7", "filename"=>"maple"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[36m  Disk Storage (2.2ms) [0m[34mGenerated URL for file at key: 69d3cmdi85w30r8lvk5wmo5k5933 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOamxrTTJOdFpHazROWGN6TUhJNGJIWnJOWGR0YnpWck5Ua3pNd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW0xaGNHeGxMbXB3WldjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoyMWhjR3hsTG1wd1pXY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyMi0xMi0yOFQxMDo1NDo0OC4xNjFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1dbdeb97d3776662c730b0e40a4b18af10b0ab11/maple.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOamxrTTJOdFpHazROWGN6TUhJNGJIWnJOWGR0YnpWck5Ua3pNd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW0xaGNHeGxMbXB3WldjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoyMWhjR3hsTG1wd1pXY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyMi0xMi0yOFQxMDo1NDo0OC4xNjFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1dbdeb97d3776662c730b0e40a4b18af10b0ab11/maple.jpeg
+Completed 302 Found in 21ms (ActiveRecord: 0.3ms | Allocations: 2515)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOamxrTTJOdFpHazROWGN6TUhJNGJIWnJOWGR0YnpWck5Ua3pNd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW0xaGNHeGxMbXB3WldjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoyMWhjR3hsTG1wd1pXY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyMi0xMi0yOFQxMDo1NDo0OC4xNjFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1dbdeb97d3776662c730b0e40a4b18af10b0ab11/maple.jpeg" for 127.0.0.1 at 2022-12-28 16:19:48 +0530
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"maple"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 474)
+
+
+Started GET "/friends" for 127.0.0.1 at 2022-12-28 16:20:01 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:20
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 18], ["record_type", "Friend"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  Rendered friends/index.html.erb within layouts/application (Duration: 63.8ms | Allocations: 11339)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 596)
+  Rendered layout layouts/application.html.erb (Duration: 71.8ms | Allocations: 15172)
+Completed 200 OK in 75ms (Views: 71.5ms | ActiveRecord: 2.2ms | Allocations: 15635)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2022-12-28 16:20:05 +0530
+Processing by FriendsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 7.4ms | Allocations: 1159)
+  Rendered friends/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1294)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 590)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 4998)
+Completed 200 OK in 37ms (Views: 24.4ms | ActiveRecord: 0.3ms | Allocations: 6816)
+
+
+Started POST "/friends" for 127.0.0.1 at 2022-12-28 16:20:29 +0530
+Processing by FriendsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "friend"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb5726c1220 @tempfile=#<Tempfile:/tmp/RackMultipart20221228-9736-w3gqn5.jpg>, @original_filename="nature.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"friend[image]\"; filename=\"nature.jpg\"\r\nContent-Type: image/jpeg\r\n">, "first_name"=>"Nature", "last_name"=>"Forest", "email"=>"nature@email.com", "phone"=>"111 222 333", "twitter"=>"@nature", "user_id"=>"5"}, "commit"=>"Create Friend"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+  [1m[36mFriend Create (0.5ms)[0m  [1m[32mINSERT INTO "friends" ("first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Nature"], ["last_name", "Forest"], ["email", "nature@email.com"], ["phone", "111 222 333"], ["twitter", "@nature"], ["created_at", "2022-12-28 10:50:29.400890"], ["updated_at", "2022-12-28 10:50:29.400890"], ["user_id", 5]]
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 19], ["record_type", "Friend"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 19], ["record_type", "Friend"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+  [1m[36mActiveStorage::Blob Create (4.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["key", "oa3hu5b92chj2pjpl3zjkm4wugwj"], ["filename", "nature.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 1084107], ["checksum", "QqHi9bYHovTtLVtWn0xDqA=="], ["created_at", "2022-12-28 10:50:29.427842"]]
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+  [1m[36mActiveStorage::Attachment Create (7.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "image"], ["record_type", "Friend"], ["record_id", 19], ["blob_id", 5], ["created_at", "2022-12-28 10:50:29.440158"]]
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+  [1m[36mFriend Update (0.4ms)[0m  [1m[33mUPDATE "friends" SET "updated_at" = ? WHERE "friends"."id" = ?[0m  [["updated_at", "2022-12-28 10:50:29.458044"], ["id", 19]]
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+  [1m[36mTRANSACTION (13.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/friends_controller.rb:36:in `block in create'
+[36m  Disk Storage (7.8ms) [0m[32mUploaded file to key: oa3hu5b92chj2pjpl3zjkm4wugwj (checksum: QqHi9bYHovTtLVtWn0xDqA==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 7c844b2c-4295-481e-aeb1-513a337f8475) to Async(default) with arguments: #<GlobalID:0x00007fb5725dd430 @uri=#<URI::GID gid://friends/ActiveStorage::Blob/5>>
+Redirected to http://localhost:3000/friends/19
+Completed 302 Found in 109ms (ActiveRecord: 27.2ms | Allocations: 14318)
+
+
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c844b2c-4295-481e-aeb1-513a337f8475] Performing ActiveStorage::AnalyzeJob (Job ID: 7c844b2c-4295-481e-aeb1-513a337f8475) from Async(default) enqueued at 2022-12-28T10:50:29Z with arguments: #<GlobalID:0x00007fb5725b44e0 @uri=#<URI::GID gid://friends/ActiveStorage::Blob/5>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c844b2c-4295-481e-aeb1-513a337f8475] [36m  Disk Storage (6.6ms) [0m[34mDownloaded file from key: oa3hu5b92chj2pjpl3zjkm4wugwj[0m
+Started GET "/friends/19" for 127.0.0.1 at 2022-12-28 16:20:29 +0530
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:72:in `set_friend'
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c844b2c-4295-481e-aeb1-513a337f8475] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c844b2c-4295-481e-aeb1-513a337f8475]   [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c844b2c-4295-481e-aeb1-513a337f8475]   [1m[36mActiveStorage::Blob Update (0.8ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 5]]
+  Rendering friends/show.html.erb within layouts/application
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c844b2c-4295-481e-aeb1-513a337f8475]   [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 19], ["record_type", "Friend"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/friends/show.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/show.html.erb:2
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c844b2c-4295-481e-aeb1-513a337f8475] Performed ActiveStorage::AnalyzeJob (Job ID: 7c844b2c-4295-481e-aeb1-513a337f8475) from Async(default) in 64.17ms
+  Rendered friends/show.html.erb within layouts/application (Duration: 18.3ms | Allocations: 4725)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:7
+  Rendered home/_header.html.erb (Duration: 4.2ms | Allocations: 1525)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 10382)
+Completed 200 OK in 54ms (Views: 48.4ms | ActiveRecord: 0.7ms | Allocations: 12598)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--677832c488895d1741fb47c59cb1d62f5e9088fa/nature.jpg" for 127.0.0.1 at 2022-12-28 16:20:29 +0530
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--677832c488895d1741fb47c59cb1d62f5e9088fa", "filename"=>"nature"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: oa3hu5b92chj2pjpl3zjkm4wugwj (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiMkV6YUhVMVlqa3lZMmhxTW5CcWNHd3plbXByYlRSM2RXZDNhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW01aGRIVnlaUzVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoyNWhkSFZ5WlM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyMi0xMi0yOFQxMDo1NToyOS42OTlaIiwicHVyIjoiYmxvYl9rZXkifX0=--9fabbdf6673a658dfdded6cd53210551e7793ccd/nature.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiMkV6YUhVMVlqa3lZMmhxTW5CcWNHd3plbXByYlRSM2RXZDNhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW01aGRIVnlaUzVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoyNWhkSFZ5WlM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyMi0xMi0yOFQxMDo1NToyOS42OTlaIiwicHVyIjoiYmxvYl9rZXkifX0=--9fabbdf6673a658dfdded6cd53210551e7793ccd/nature.jpg
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiMkV6YUhVMVlqa3lZMmhxTW5CcWNHd3plbXByYlRSM2RXZDNhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW01aGRIVnlaUzVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoyNWhkSFZ5WlM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyMi0xMi0yOFQxMDo1NToyOS42OTlaIiwicHVyIjoiYmxvYl9rZXkifX0=--9fabbdf6673a658dfdded6cd53210551e7793ccd/nature.jpg" for 127.0.0.1 at 2022-12-28 16:20:29 +0530
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"nature"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 286)
+
+
+Started GET "/friends" for 127.0.0.1 at 2022-12-28 16:20:33 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.5ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 18], ["record_type", "Friend"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 19], ["record_type", "Friend"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  Rendered friends/index.html.erb within layouts/application (Duration: 71.8ms | Allocations: 13995)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.0ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 84.3ms | Allocations: 17701)
+Completed 200 OK in 87ms (Views: 83.2ms | ActiveRecord: 2.5ms | Allocations: 18118)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOamxrTTJOdFpHazROWGN6TUhJNGJIWnJOWGR0YnpWck5Ua3pNd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW0xaGNHeGxMbXB3WldjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoyMWhjR3hsTG1wd1pXY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyMi0xMi0yOFQxMDo1NDo0OC4xNjFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1dbdeb97d3776662c730b0e40a4b18af10b0ab11/maple.jpeg" for 127.0.0.1 at 2022-12-28 16:20:33 +0530
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"maple"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 288)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2022-12-28 16:20:37 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/home/about.html.erb:3
+  Rendered home/about.html.erb within layouts/application (Duration: 7.4ms | Allocations: 984)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 599)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 4688)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.2ms | Allocations: 5085)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Test2.png"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-28 16:20:38 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:7
+  Rendered home/_header.html.erb (Duration: 5.2ms | Allocations: 1538)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 4692)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.2ms | Allocations: 5084)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Test2.png"):
+  
+Started GET "/friends" for 127.0.0.1 at 2022-12-28 16:20:41 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.0ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 18], ["record_type", "Friend"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 19], ["record_type", "Friend"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  Rendered friends/index.html.erb within layouts/application (Duration: 117.7ms | Allocations: 13994)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 131.6ms | Allocations: 17700)
+Completed 200 OK in 134ms (Views: 128.9ms | ActiveRecord: 3.9ms | Allocations: 18117)
+
+
+Started GET "/friends" for 127.0.0.1 at 2022-12-28 16:21:15 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 18], ["record_type", "Friend"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 19], ["record_type", "Friend"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  Rendered friends/index.html.erb within layouts/application (Duration: 57.7ms | Allocations: 14695)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 1115)
+  Rendered layout layouts/application.html.erb (Duration: 69.5ms | Allocations: 19566)
+Completed 200 OK in 75ms (Views: 71.9ms | ActiveRecord: 1.7ms | Allocations: 20919)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOamxrTTJOdFpHazROWGN6TUhJNGJIWnJOWGR0YnpWck5Ua3pNd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW0xaGNHeGxMbXB3WldjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoyMWhjR3hsTG1wd1pXY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyMi0xMi0yOFQxMDo1NDo0OC4xNjFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1dbdeb97d3776662c730b0e40a4b18af10b0ab11/maple.jpeg" for 127.0.0.1 at 2022-12-28 16:21:16 +0530
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiMkV6YUhVMVlqa3lZMmhxTW5CcWNHd3plbXByYlRSM2RXZDNhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW01aGRIVnlaUzVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoyNWhkSFZ5WlM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyMi0xMi0yOFQxMDo1NToyOS42OTlaIiwicHVyIjoiYmxvYl9rZXkifX0=--9fabbdf6673a658dfdded6cd53210551e7793ccd/nature.jpg" for 127.0.0.1 at 2022-12-28 16:21:16 +0530
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"maple"}
+Processing by ActiveStorage::DiskController#show as JPEG
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 721)
+
+
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"nature"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2022-12-28 16:21:17 +0530
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/home/about.html.erb:3
+  Rendered home/about.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1355)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 656)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 5370)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.7ms | Allocations: 6465)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Test2.png"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-28 16:21:21 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 206)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:7
+  Rendered home/_header.html.erb (Duration: 22.0ms | Allocations: 1538)
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 4860)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.3ms | Allocations: 5387)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Test2.png"):
+  
+Started GET "/friends" for 127.0.0.1 at 2022-12-28 16:21:22 +0530
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.5ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:20
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 18], ["record_type", "Friend"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 19], ["record_type", "Friend"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/friends/index.html.erb:24
+  Rendered friends/index.html.erb within layouts/application (Duration: 110.3ms | Allocations: 14080)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 121.6ms | Allocations: 17784)
+Completed 200 OK in 124ms (Views: 119.9ms | ActiveRecord: 3.0ms | Allocations: 18203)
+
+
