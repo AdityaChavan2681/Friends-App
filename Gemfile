@@ -3,8 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.0'
 
-gem 'devise', '~> 4.8', '>= 4.8.1'
 
+gem 'net-smtp', require: false
+gem 'toastr-rails', '~> 1.0'
+
+gem 'devise', '~> 4.8', '>= 4.8.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.4'
 # Use sqlite3 as the database for Active Record
