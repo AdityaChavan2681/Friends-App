@@ -2,7 +2,10 @@ This is an about you page
 <br/>
 <%if user_signed_in? %>
 <div class="card" style="width: 18rem;">
-  <img src="/assets/Test2.png" class="card-img-top" alt="...">
+<div class="text-center">
+  <img src="/assets/profile-logo" class="rounded" alt="" style="width: 18rem;">
+</div>
+
   <div class="card-body">
     <h5 class="card-title">
       <%= current_user.email %>

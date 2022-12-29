@@ -9,7 +9,11 @@
     <div class="carousel-item active">
       <img src="/assets/Test6.png" class="d-block w-25" alt="...">
       <div class="carousel-caption d-none d-md-block">
+      <% if !user_signed_in? %>
         <h5>Hey There, Welcome to Friends App!, Please Sign up or Log in to the portal</h5>
+        <% else %>
+        <h5>Welcome back!<h5>
+        <% end %>
         <%# <p>This is the first slide example.</p> %>
       </div>
     </div>
